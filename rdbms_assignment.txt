@@ -1,0 +1,45 @@
+RDBMS ASSIGNMENT
+
+1. RDBMS stands for relational database management system. It is simply a database management system for relational data.That is, it supports data storage along with its storage and relationships.
+Industries use RDBMS because:
+a.Supports transactions.
+b.relational data is stored
+c.proper schema
+d.data integrity
+
+2.Relationship data model is based on two things data and relationships. It focuses on these both to create the model. Data is stored in the form of rows and columns as tables.These table asre called as relations. Multiple tables are related to each other forming various relationships.
+
+3.Relationships among data is very important to maintain the whole data structure as well as maintain the integrity and consistency of the database.Relationships are of the following types:
+a.one-to-one
+b.one-to-many
+c.many-to-one
+d.many-to-many
+
+4. Primary Key: It's like a unique ID for each record,such as an ISBN for books.
+Foreign Key: This links to a primary key in another table, like how an ISBN in the Borrowers table connects to the Books table.
+Unique Key: It ensures that a field only has unique values,like an Author ID in the Authors table.
+Composite Key: It's a combo of multiple fields to ensure uniqueness, like ISBN + Section ID.
+Candidate Key: These are potential options for a primary key, like using a book title
+
+5.SRP or single responsibility principle is based on the fact that it is advised to store data about one kind of entity in one table/relation to prevent issues like redundancy,inconsistency,etc.
+
+6.The different types of errors that could arise in a denormalized database are:
+a.Insertion anomaly,errors in insertion
+b.Updation anomaly,losing of previous records on updation
+c.Deletion anomaly, deletion of data of one entity results in deletion of others too.
+
+7.Normalization is the process of organizing data in a database efficiently. It reduces redundancy and dependency by breaking down large tables into smaller, related tables. This ensures data integrity and saves storage space.
+
+8.The different levels of normalisation are:
+1NF:a relation which has a primary key and each cell has atomic values.
+2NF:a relation which is in 1NF state and does not have partial dependency to the primary key
+3NF:a relation which is in 2NF state and does not have transitive dependency.
+BCNF:a relation which is in 3NF state and for every y depends on x, x must be the primary key.
+
+9.Join is actually joining data from multiple tables to derive multiple results in the form of meaningful insights. It is required because the data may not always be in the required format and may require the joining of multiple tables based on certain criterias.
+
+10.The different types of join are:
+a.Full Join: both the relations along with its common part present in the result.
+b.Left join: the first relation only along with its common part.
+c.Right join: the second relation only along with its common part.
+d.Inner join: only the common part of both the relations is included.
